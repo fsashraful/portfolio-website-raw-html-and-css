@@ -1,0 +1,419 @@
+/* own Css start  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left{
+    float: left;  
+}
+
+.right{
+    float: right;
+}
+
+.fixwidth{
+    width: 80%;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* own css end  */
+
+/* Header section start  */
+header{
+    background: #000000;
+   
+}
+.logo img{
+    width: 100px;
+    margin-top: 5px;
+}
+
+.menu ul{
+    text-align: right;
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+	display: block;
+	font-size: 25px;
+	color: white;
+	padding: 10px 25px;
+	line-height: 50px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Drop Down Menu start  */
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    text-align: center;
+    height: auto;
+    background: black;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: .5s;
+    
+    
+}
+.menu ul li li{
+    display: block;
+}
+.menu ul li a{
+    display: block;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    
+}
+
+.menu ul li ul li a:hover{
+    background: white;
+    color: #000000;
+}
+
+/* Drop Down Menu End  */
+
+/* Header section End  */
+
+/* Hero section start  */
+.hero {
+	background: url(https://i.ibb.co/31X7GC6/a0c6042d4612d7adf44692fffac7e082.jpg);
+	padding: 202px 65px;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-content h1 {
+	font-size: 40px;
+	color: #223127;
+}
+
+.hero-content h4 {
+	padding: 15px 0;
+	font-size: 20px;
+}
+.hero-content a {
+	text-decoration: none;
+	background: white;
+	padding: 15px 35px;
+	margin: 10px 10px 0 0;
+	display: inline-block;
+	border-radius: 10px;
+	color: black;
+    transition: .5s;
+}
+
+.link-bg{
+    background: black !important;
+    color: white !important;
+    transition: .5s;
+}
+
+.link-bg:hover{
+    background: white !important;
+    color: black !important;
+}
+
+.hero-content a:hover{
+    background: black;
+    color: white;
+}
+/* Hero section End */
+
+/* About section start  */
+
+.about {
+	background: #87a471;
+	padding: 10px;
+}
+
+.about-content h2 {
+	text-align: center;
+	padding-top: 38px;
+	color: #e8dfda;
+	font-size: 45px;
+	text-shadow: 1px 1px 4px #e8dfda;
+    position: relative;
+}
+
+.about-content h2::after {
+    content: "";
+    position: absolute;
+    height: 3%;
+    width: 25%;
+    top: 95px;
+    left: 375px;
+    background: #e8dfda;
+}
+
+.about-content p {
+	width: 80%;
+	padding: 105px 120px;
+    color: white;
+}
+
+.about-content img {
+	width: 20%;
+	margin-top: 40px;
+}
+/* About section End */
+
+/* Service Section start  */
+.service {
+	background: #606a64;
+	padding: 30px 0 340px 0;
+	
+}
+.service-text h2 {
+	text-align: center;
+	padding-top: 38px;
+	color: #e8dfda;
+	font-size: 45px;
+	text-shadow: 1px 1px 4px #e8dfda;
+    position: relative;
+}
+
+.service-text h2::after {
+    content: "";
+    position: absolute;
+    height: 3%;
+    width: 20%;
+    top: 92px;
+    left: 406px;
+    background: #e8dfda;
+}
+.service-text h3 {
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	color: #dfe0e1;
+	margin-top: 20px;
+}
+.service-text p {
+	padding: 20px 220px;
+    color: white;
+}
+
+/* service card :start */
+
+.service-card {
+    background: white;
+    float: left;
+    width: 30.3%;
+    height: auto;
+    margin: 30px 12px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.s-logo{
+    height: 100%;
+    width: 15%;
+}
+
+.s-logo img{
+    width: 40px;
+}
+
+.s-contnent {
+	width: 75%;
+}
+.s-contnent h3{
+    padding-bottom: 10px;
+}
+
+/* Service Section End */
+
+/* Works section start  */
+.works{
+    background: #87a471;
+    padding: 50px 0;
+}
+.l-works h2{
+    color: white;
+}
+.pt {
+	color: #dbded8 !important;
+	padding: 20px 0 50px 0 !important;
+}
+
+.l-img div{
+    width: 49%;
+    margin: 2px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+.l-img img{
+    width: 100%;
+}
+.l-img p{
+    color: #4b778a;
+    font-weight: bold;
+}
+
+.l-img span {
+	color: white;
+	display: inline-block;
+	padding-bottom: 15px;
+}
+
+.l-img2 div {
+    display: inline-block;
+    width: 22%;
+    text-align: center;
+    margin: 47px 10px;
+}
+
+.l-img2 div img{
+	max-width: 100%;
+}
+
+
+/* Works section End */
+
+/* Member section start  */
+.member{
+    background: #5b9776;
+    padding: 30px 0;
+}
+.member-content h2 {
+	text-align: center;
+	padding-top: 38px;
+    font-size: 30px;
+	color: #e8dfda;
+	text-shadow: 1px 1px 4px #e8dfda;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.member-content h2::after {
+    content: "";
+    position: absolute;
+    height: 3%;
+    width: 31%;
+    top: 83px;
+    left: 352px;
+    background: #e8dfda;
+}
+
+.member-info img {
+    max-width: 100%;
+   
+}
+
+.meb-pd{
+	margin: 0 20px;
+}
+
+.member-info{
+	display: inline-block;
+	width: 31.3%;
+}
+
+.social{
+text-align: center;
+}
+
+.social i {
+	font-size: 25px;
+	color: white;
+	padding: 5px 3px;
+	transition: .5s;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 19px;
+    cursor: pointer;
+}
+
+.social i:hover{
+    background: #5b7492;
+}
+
+/* Member section End */
+
+/* Footer content start  */
+.footer {
+	background: #606a64;
+	color: #e4e6e8;
+	padding: 70px 0;
+}
+
+.footer h2 {
+	font-size: 40px;
+    padding-bottom: 20px;
+}
+.footer p {
+	padding-bottom: 20px;
+}
+.footer a {
+	text-decoration: none;
+	display: inline-block;
+	background: #00bc9c;
+	padding: 15px 65px;
+	color: white;
+	border-radius: 10px;
+    transition: .5s;
+}
+.footer a:hover{
+    background: #4d6a89;
+}
+/* Footer content End */ 
+
+.footter-menu{
+    background: #000000;
+    color: white;
+}
+
+.footter-menu p {
+	text-align: center;
+	padding: 30px;
+} 
+
+.video {
+	text-align: center;
+ }
+ .video a {
+	text-decoration: none;
+	display: inline-block;
+	background: #0dbf9b;
+	font-size: 25px;
+	color: white;
+	border-radius: 6px;
+	padding: 10px 10px;
+	margin-top: 10px;
+}
+
